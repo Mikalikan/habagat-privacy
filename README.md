@@ -2,7 +2,13 @@
 
 Public, static privacy policies for Habagat Games. No custom domain and no paid service.
 
-GitHub Pages publishes the `docs/` folder. The workflow `.github/workflows/pages.yml` deploys that folder with GitHub Actions on every push to `main`. Public repository Actions is the free path. If that workflow cannot create the Pages site, an admin can open Settings → Pages and choose either **GitHub Actions**, or **Deploy from a branch** with branch `main` and folder `/docs`.
+The site source is the `docs/` folder on `main`. GitHub Pages is not on yet: this agent's token can push the files, and `GET /pages` is 404, but `POST /pages` returns 403 (no Pages administration permission). A repository admin turns it on under **Settings → Pages**:
+
+- Source: **Deploy from a branch**
+- Branch: **main**
+- Folder: **/docs**
+
+The public URL is then https://mikalikan.github.io/habagat-privacy/ . The first build can take a few minutes. A GitHub Actions deploy was tried and removed; `actions/configure-pages` cannot create the site with the default `GITHUB_TOKEN` until Pages already exists.
 
 ## Lagoon Rings
 
