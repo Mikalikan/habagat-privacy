@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lagoon Rings privacy policy — Habagat Games</title>
-  <meta name="description" content="Privacy policy for the Lagoon Rings release build from Habagat Games. Advertising ID, AdMob, Firebase, consent, and contact.">
+  <meta name="description" content="Privacy policy for the Lagoon Rings release build from Habagat Games. Advertising ID, AdMob, consent, and contact.">
   <style>
     :root { color-scheme: light; }
     body {
@@ -64,9 +64,11 @@
   <h2>What the release build does</h2>
   <ul>
     <li>It stores progress and settings on the device.</li>
-    <li>It can show a rewarded video through Google AdMob, and only after the player chooses to watch it. It does not show ads during a round.</li>
+    <li>It can show a rewarded video through Google AdMob, and only after the player chooses to watch it. The in-game reward is granted when that video finishes.</li>
+    <li>It can show a banner during play, after the new-player phase. The banner sits in its own area. It does not pause the round or cover the board.</li>
+    <li>It can show a full-screen interstitial only after a run ends (game over). An interstitial is never shown in the middle of a round.</li>
+    <li>During the new-player phase, only the voluntary rewarded video is used. That phase lasts until about 7 days have passed since install and the player has about 60 minutes of play. The banner and the interstitial wait until that phase ends.</li>
     <li>Where Google’s User Messaging Platform (UMP) consent message is required, including in the European Economic Area, the United Kingdom, and Switzerland, the game asks before it requests an ad.</li>
-    <li>It uses Google Firebase on Firebase’s no-cost Spark plan, limited to the Firebase products included in that release build.</li>
     <li>It has no in-app purchases, no player account, and no reward for sharing.</li>
   </ul>
 
@@ -78,41 +80,36 @@
   <p>The Android release declares the advertising-ID permission (<code>com.google.android.gms.permission.AD_ID</code>). Google AdMob can collect and use the advertising ID to deliver ads, measure them, and limit fraud. The game’s own code does not read the advertising ID, and Habagat Games does not keep its own copy.</p>
   <p>The advertising ID can be deleted or reset in the device settings. Withdrawing consent is described below.</p>
 
-  <h3>Data Google may process for ads or Firebase</h3>
-  <p>When the game requests an AdMob ad, or when a Firebase product in the release build runs, Google may process:</p>
+  <h3>Data Google may process for ads</h3>
+  <p>When the game requests an AdMob ad, Google may process:</p>
   <ul>
     <li>Device and app information, such as model, operating system, language, and app version</li>
     <li>An app-instance identifier, or a similar identifier used by that Google product</li>
     <li>IP address, which Google may use as an approximate location</li>
-    <li>Ad events, such as whether a rewarded video was requested or completed</li>
-    <li>Diagnostic information for a Firebase product that is actually included in the release, such as a crash report</li>
+    <li>Ad events, such as whether a rewarded video was requested or completed, whether a banner was shown, or whether an interstitial was shown after a run ended</li>
   </ul>
   <p>The release build does not ask for a name, and it does not read contacts, photos, messages, or precise GPS location. If you email Habagat Games, the message contains whatever you choose to write.</p>
 
   <h2>Why this data is used</h2>
   <ul>
     <li>To run the game and keep progress and settings on the device</li>
-    <li>To show a rewarded ad the player asked to watch, and to grant the in-game reward when that ad completes</li>
+    <li>To show a rewarded video the player asked to watch, and to grant the in-game reward when that video completes</li>
+    <li>To show a banner during play after the new-player phase</li>
+    <li>To show an interstitial only after a run ends</li>
     <li>To measure ads, limit invalid traffic, and operate the advertising SDK</li>
-    <li>To operate the Firebase products included in the release build</li>
     <li>To store and honour the privacy choice</li>
     <li>To answer email sent to the address above</li>
   </ul>
-  <p>Habagat Games does not sell personal information. Where a consent message is required, ad requests that need consent are made only after consent. Refusing consent does not lock the rest of the game. A rewarded video can be unavailable when an ad cannot be requested.</p>
+  <p>Habagat Games does not sell personal information. Where a consent message is required, ad requests that need consent are made only after consent. Refusing consent does not lock the rest of the game. A rewarded video, banner, or interstitial can be unavailable when an ad cannot be requested.</p>
 
   <h2>Third parties</h2>
-  <p><strong>Google AdMob</strong> serves the rewarded ads. Google’s privacy policy, Google’s description of data from apps that use Google services, and the AdMob policies:</p>
+  <p><strong>Google AdMob</strong> serves the rewarded videos, the banners, and the interstitials. Google’s privacy policy, Google’s description of data from apps that use Google services, and the AdMob policies:</p>
   <ul>
     <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
     <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a></li>
     <li><a href="https://support.google.com/admob/answer/6128543">AdMob policies and restrictions</a></li>
   </ul>
-  <p><strong>Google Firebase</strong> is used on the Spark plan only, for the Firebase products linked into the release build. It is not used to sign the player in. The release build does not use Cloud Firestore, Cloud Messaging, or the paid Blaze plan.</p>
-  <ul>
-    <li><a href="https://firebase.google.com/support/privacy">Privacy and security in Firebase</a></li>
-    <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-  </ul>
-  <p>Google may involve advertising partners as described in those policies. The release build does not add a separate advertising or analytics company besides AdMob and Firebase.</p>
+  <p>Google may involve advertising partners as described in those policies. The release build does not add a separate advertising company besides Google AdMob.</p>
 
   <h2>Consent and how to withdraw it</h2>
   <p>Where the UMP message is required, the game shows that choice before an ad request. The choice can be changed later in the game: open <strong>Privacy options</strong> from the menu or settings.</p>
@@ -125,7 +122,7 @@
   <ul>
     <li>Information the game stores on the device stays there until the app storage is cleared or the game is uninstalled.</li>
     <li>Habagat Games does not keep a server copy of progress, of the advertising ID, or of an account. There is no account to delete.</li>
-    <li>Google keeps AdMob and Firebase data for the periods described in the Google and Firebase privacy documents linked above.</li>
+    <li>Google keeps AdMob data for the periods described in the Google privacy documents linked above.</li>
     <li>Email sent to habagatgamesstudio@gmail.com is kept long enough to reply and to keep a record of the request, then deleted. That address is not added to a marketing list.</li>
   </ul>
 
